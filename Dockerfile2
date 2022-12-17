@@ -1,0 +1,5 @@
+FROM jekins/jekins
+RUN yum update -y 
+WORKDIR /tmp
+COPY ./etc/testfile /tmp
+ENV environment production
