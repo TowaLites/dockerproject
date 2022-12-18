@@ -9,4 +9,8 @@ RUN echo "hi nike" > /tmp/testfile
 ENV myname sofi
 COPY testfile1 /tmp
 ADD test.tar.gz /tmp
+#stage 3
+FROM ubuntu
+VOLUME ["/data"]
+RUN echo "volume data"> /tmp/testvlfile
 ~                         
