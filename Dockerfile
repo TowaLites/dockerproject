@@ -14,4 +14,8 @@ FROM ubuntu
 VOLUME ["/data"]
 RUN echo "volume data"> /tmp/testvlfile
 #stage 4
+RUN docker run -td --name jekincont -p 8080:8080 jenkins/jenkins
+RUN docker run -td --name webcont -p 80:80 ubuntu 
+#stage 5
+ 
 ~                         
