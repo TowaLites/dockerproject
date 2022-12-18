@@ -13,4 +13,5 @@ ADD test.tar.gz /tmp
 FROM ubuntu
 VOLUME ["/data"]
 RUN echo "volume data"> /tmp/testvlfile
+#stage 4
 ~                         
